@@ -15,7 +15,7 @@ const Hero = () => {
           <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
             Fast, flexible financing for
           </p>
-          <p className="md:text-5xl sm:text-4xl text-xl text-[#6d6d6d] font-bold md:pl-4 pl-3">
+          <p className="md:text-5xl sm:text-4xl text-xl text-[#6d6d6d] font-bold md:pl-4 pl-2">
             <Typewriter
               words={["BtoB", "BtoC", "SaaS"]}
               typeSpeed={120}
