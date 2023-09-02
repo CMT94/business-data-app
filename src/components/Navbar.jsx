@@ -2,15 +2,14 @@ import React from "react";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
+import CallToActionButton from "./ui/CallToActionButton";
+
 const navLinks = [
   {
     key: "home",
   },
   {
     key: "account",
-  },
-  {
-    key: "resources",
   },
   {
     key: "about",
@@ -31,11 +30,16 @@ const Navbar = () => {
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">DATABIZ.</h1>
       <ul className="capitalize hidden md:flex">
         {navLinks.map((link) => (
-          <li key={link.key} className="p-4">
+          <li key={link.key} className="p-4 cursor-pointer">
             {link.key}
           </li>
         ))}
       </ul>
+
+      <CallToActionButton
+        bgColor={"bg-white"}
+        hoverBgColor={"hover:bg-[#e7e7e7]"}
+      />
 
       {/* MOBILE NAV - START */}
       <div onClick={toggleNavMenu} className="block md:hidden">
