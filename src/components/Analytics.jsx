@@ -25,6 +25,8 @@ const Analytics = () => {
           <p>{analyticsContent.description}</p>
           <CallToActionButton
             bgColor={"bg-black"}
+            hoverBgColor={"hover:bg-[#292929]"}
+            hov
             textColor={"text-[#00df9a]"}
             customOverride={"md:mx-0 py-3"}
           >
