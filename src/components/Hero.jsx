@@ -1,6 +1,10 @@
 import React from "react";
 
+import Button from "./ui/CallToActionButton";
+
 import { Typewriter } from "react-simple-typewriter";
+import CallToActionButton from "./ui/CallToActionButton";
+
 const Hero = () => {
   return (
     <div className="text-white">
@@ -15,7 +19,7 @@ const Hero = () => {
           <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">
             Fast, flexible financing for
           </p>
-          <p className="md:text-5xl sm:text-4xl text-xl text-[#6d6d6d] font-bold md:pl-4 pl-3">
+          <p className="md:text-5xl sm:text-4xl text-xl text-[#6d6d6d] font-bold md:pl-4 pl-2">
             <Typewriter
               words={["BtoB", "BtoC", "SaaS"]}
               typeSpeed={120}
@@ -30,9 +34,8 @@ const Hero = () => {
           Monitor your data analytics to increase revenue for BtoB, BtoC & SaaS
           platforms.
         </p>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-black hover:bg-[#02c98c]">
-          Get Started
-        </button>
+
+        <CallToActionButton />
       </div>
     </div>
   );
