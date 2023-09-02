@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Analytics from "./components/Analytics";
 import Newsletter from "./components/Newsletter";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Analytics />
       <Newsletter />
       <Services />
+      <Footer />
     </React.Fragment>
   );
 };
