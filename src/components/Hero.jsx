@@ -1,6 +1,10 @@
 import React from "react";
 
+import Button from "./ui/CallToActionButton";
+
 import { Typewriter } from "react-simple-typewriter";
+import CallToActionButton from "./ui/CallToActionButton";
+
 const Hero = () => {
   return (
     <div className="text-white">
@@ -30,9 +34,8 @@ const Hero = () => {
           Monitor your data analytics to increase revenue for BtoB, BtoC & SaaS
           platforms.
         </p>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-black hover:bg-[#02c98c]">
-          Get Started
-        </button>
+
+        <CallToActionButton />
       </div>
     </div>
   );
